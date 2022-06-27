@@ -38,8 +38,7 @@ Source: https://www.kaggle.com/datasets/samuelcortinhas/credit-card-approval-cle
 --GROUP BY Ethnicity
 
 
--- Shows approval percentage based on age
+-- Shows number of distinct industries, ethnicities, and citizen types
 
-SELECT Age, SUM(ROUND(Approved, 2)) / COUNT(*) AS ApprovalPercentage
+SELECT COUNT(DISTINCT Industry) AS UniqueIndustries, COUNT(DISTINCT Ethnicity) AS UniqueEthnicities, COUNT(DISTINCT Citizen) AS UniqueCitizens
 FROM CreditCardProject..clean_dataset
-GROUP BY Ethnicity
