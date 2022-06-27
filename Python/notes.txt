@@ -11,6 +11,7 @@ Installed Libraries
 > py -m pip install pandas
 > py -m pip install matplotlib
 > py -m pip install seaborn
+> py -m pip install scikit-learn
 
 Once All Necessary Packages are Added
 > py -m pip freeze > requirements.txt
