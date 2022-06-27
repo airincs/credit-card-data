@@ -5,5 +5,7 @@
 ### Data Details
 
 - Source: https://www.kaggle.com/datasets/samuelcortinhas/credit-card-approval-clean-data
-  ![Kaggle](https://img.shields.io/badge/Kaggle-035a7d?style=for-the-badge&logo=kaggle&logoColor=white)
+
+![Kaggle](https://img.shields.io/badge/Kaggle-035a7d?style=for-the-badge&logo=kaggle&logoColor=white)
+
 - 690 Rows
