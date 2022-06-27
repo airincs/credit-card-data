@@ -16,6 +16,11 @@
 ## Purpose? Why?
 This goal of this analysis was to see what variables most impact someone's chances at getting approved for a credit card. After some feature exploring, deciding on a most effective predictive model was the next step.
 
+## Python Libraries Used
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+
 ## Results
 ![alt text](https://github.com/airincs/credit-card-data/blob/main/images/Results.PNG?raw=true)
 
