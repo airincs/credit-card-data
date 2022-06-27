@@ -10,7 +10,7 @@ pd.set_option('display.width', 1000)
 
 ##reading in data
 df = pd.read_csv("./credit_card.csv")
-train, test = train_test_split(df, test_size=0.20)
+train = df
 
 ##printing out general information
 #print(train.describe(include="all"))
@@ -34,20 +34,42 @@ print(train[['CategoricalAge', "Approved"]].groupby(['CategoricalAge'], as_index
 
 #interesting variables: gender, ethnicity, married, priordefault, employed,industry, bankcustomer,citizen, categoricalage
 sns.barplot(x="Gender", y="Approved", data=train)
-plt.show()
+#plt.show()
 sns.barplot(x="Ethnicity", y="Approved", data=train)
-plt.show()
+#plt.show()
 sns.barplot(x="Married", y="Approved", data=train)
-plt.show()
+#plt.show()
 sns.barplot(x="PriorDefault", y="Approved", data=train)
-plt.show()
+#plt.show()
 sns.barplot(x="Employed", y="Approved", data=train)
-plt.show()
+#plt.show()
 sns.barplot(x="Industry", y="Approved", data=train)
-plt.show()
+#plt.show()
 sns.barplot(x="BankCustomer", y="Approved", data=train)
-plt.show()
+#plt.show()
 sns.barplot(x="Citizen", y="Approved", data=train)
-plt.show()
+#plt.show()
 sns.barplot(x="CategoricalAge", y="Approved", data=train)
-plt.show()
+#plt.show()
+
+#mapping categorical values to numerical values
+industry_mapping = {'Industrials': 1, 'Materials': 2, 'CommunicationServices': 3, 'Transport': 4, 'InformationTechnology': 5,
+                    'Financials': 6, 'Energy': 7, 'Real Estate': 8, 'Utilities': 9, 'Energy': 10, 'ConsumerDiscretionary': 11,
+                    'Education': 12, 'ConsumerStaples': 13, ''}
+ethnicity_mapping = {}
+citizen_mapping = {}
+
+##Model Prediction
+predictors = train.drop(['Approved'], axis=1)
+target = train['Approved']
+x_train, x_val, y_train, y_val = train_test_split(predictors, target, test_size = 0.20, random_state = 0)
+
+#logistic regression
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score
+
+lr = LogisticRegression()
+lr.fit(x_train, y_train)
+y_predict = lr.predict(x_val)
+acc_lr = round(accuracy_score(y_predict, y_val) * 100, 3)
+print("Logistic Regression: " + acc_lr)
