@@ -33,6 +33,13 @@ Source: https://www.kaggle.com/datasets/samuelcortinhas/credit-card-approval-cle
 
 -- Shows approval percentage based on ethnicity
 
-SELECT Ethnicity, SUM(ROUND(Approved, 2)) / COUNT(*) AS ApprovalPercentage
+--SELECT Ethnicity, SUM(ROUND(Approved, 2)) / COUNT(*) AS ApprovalPercentage
+--FROM CreditCardProject..clean_dataset
+--GROUP BY Ethnicity
+
+
+-- Shows approval percentage based on age
+
+SELECT Age, SUM(ROUND(Approved, 2)) / COUNT(*) AS ApprovalPercentage
 FROM CreditCardProject..clean_dataset
 GROUP BY Ethnicity
