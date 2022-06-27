@@ -21,6 +21,7 @@ This goal of this analysis was to see what variables most impact someone's chanc
 We can conclude that a Logistic Regression model would be the most fitting.
 
 Some interesting variables:
+
 ![alt text](https://github.com/airincs/credit-card-data/blob/main/images/CategoricalAge.png?raw=true)
 ![alt text](https://github.com/airincs/credit-card-data/blob/main/images/Employed.png?raw=true)
 ![alt text](https://github.com/airincs/credit-card-data/blob/main/images/Ethnicity.png?raw=true)
