@@ -62,10 +62,15 @@ train['IndustryMap'] = train['Industry'].map(industry_mapping)
 train['EthnicityMap'] = train['Ethnicity'].map(ethnicity_mapping)
 train['CitizenMap'] = train['Citizen'].map(citizen_mapping)
 
+##Correlation Matrix
+train = train.drop(['Industry', 'Ethnicity', 'Citizen', 'CategoricalAge'], axis=1)
+corr_matrix = train.corr()
+sns.heatmap(corr_matrix, annot=True)
+plt.show()
 
 ##Model Prediction
 print(train.isnull().any())
-predictors = train.drop(['Approved', 'Industry', 'Ethnicity', 'Citizen', 'CategoricalAge'], axis=1)
+predictors = train.drop(['Approved'], axis=1)
 target = train['Approved']
 x_train, x_val, y_train, y_val = train_test_split(predictors, target, test_size=0.20, random_state=0)
 
