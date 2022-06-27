@@ -1,0 +1,19 @@
+Setting Up Virtual Environment for Python Projects
+> py -m venv .venv
+To Activate (You'll see (.venv) in terminal if activated)
+> .venv\Scripts\Activate.ps1
+To Deactivate
+> deactivate
+
+Installed Libraries
+> py -m pip install --upgrade pip
+> py -m pip install numpy
+> py -m pip install pandas
+> py -m pip install matplotlib
+> py -m pip install seaborn
+
+Once All Necessary Packages are Added
+> py -m pip freeze > requirements.txt
+
+To Install Needed Packages
+> py -m pip install -r requirements.txt
