@@ -17,7 +17,8 @@
 This goal of this analysis was to see what variables most impact someone's chances at getting approved for a credit card. After some feature exploring, deciding on a most effective predictive model was the next step.
 
 ## Results
-![alt text](https://github.com/airincs/credit-card-data/blob/main/images/Results.png?raw=true)
+![alt text](https://github.com/airincs/credit-card-data/blob/main/images/Results.PNG?raw=true)
+
 We can conclude that a Logistic Regression model would be the most fitting.
 
 Some interesting variables:
@@ -25,7 +26,6 @@ Some interesting variables:
 ![alt text](https://github.com/airincs/credit-card-data/blob/main/images/CategoricalAge.png?raw=true)
 ![alt text](https://github.com/airincs/credit-card-data/blob/main/images/Employed.png?raw=true)
 ![alt text](https://github.com/airincs/credit-card-data/blob/main/images/Ethnicity.png?raw=true)
-![alt text](https://github.com/airincs/credit-card-data/blob/main/images/Industry.png?raw=true)
 ![alt text](https://github.com/airincs/credit-card-data/blob/main/images/PriorDefault.png?raw=true)
 
 From the Correlation Matrix:
