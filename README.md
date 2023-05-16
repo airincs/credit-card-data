@@ -14,7 +14,7 @@
 - Microsoft SQL Server was used initially to gather some insights into the data. After SQL, Python was used to analyze the data and to create several models.
 
 ## Purpose? Why?
-This goal of this analysis was to see what variables most impact someone's chances at getting approved for a credit card. After some feature exploring, deciding on a most effective predictive model was the next step.
+The goal of this analysis was to see what variables most impact someone's chances at getting approved for a credit card. After some feature exploring, deciding on a most effective predictive model was the next step.
 
 ## Python Libraries Used
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
